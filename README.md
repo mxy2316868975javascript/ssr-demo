@@ -62,12 +62,12 @@ Here are some ideas to get you started:
 ---
 -->
 <!--
-<img  align="left" width="auto" alt="Dieu-Puissant Cyprien OTTO's GitHub Top Languages"  src="https://github-readme-stats.vercel.app/api/top-langs/?username=cyprienotto&&include_all_commits=true&&count_private=true&&langs_count=10&&layout=compact"  />
+<img  align="left" width="auto" alt="Dieu-Puissant Cyprien OTTO's GitHub Top Languages"  src="https://github-readme-stats.vercel.app/api/top-langs/?username=ottodpc&&include_all_commits=true&&count_private=true&&langs_count=10&&layout=compact"  />
 -->
 
-<img  align="left" width="auto" alt="Dieu-Puissant Cyprien OTTO's GitHub Top Languages"  src="https://github-readme-stats.vercel.app/api/top-langs/?username=cyprienotto&&langs_count=10&&title_color=0c7b93"  />
+<img  align="left" width="auto" alt="Dieu-Puissant Cyprien OTTO's GitHub Top Languages"  src="https://github-readme-stats.vercel.app/api/top-langs/?username=ottodpc&&langs_count=10&&title_color=0c7b93"  />
 
-<img align="right" width="auto" src="https://github-readme-stats.vercel.app/api?username=cyprienotto&include_all_commits=true&&custom_title=CyprienOTTO's Github Stats&count_private=true&show_icons=true&title_color=ffffff&icon_color=e3f6f5&text_color=fafafa&bg_color=0c7b93">
+<img align="right" width="auto" src="https://github-readme-stats.vercel.app/api?username=ottodpc&include_all_commits=true&&custom_title=CyprienOTTO's Github Stats&count_private=true&show_icons=true&title_color=ffffff&icon_color=e3f6f5&text_color=fafafa&bg_color=0c7b93">
 
 
 <!-- thanks to :
