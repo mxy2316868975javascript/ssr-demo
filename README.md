@@ -6,6 +6,9 @@ Here are some ideas to get you started:
 <!--
 - 🔭 I’m currently working on [@tolhelo](https://github.com/tolhelo)
 -->
+
+<img src="https://i.giphy.com/media/S3Pe5NZqgmE8Tl3NI5/giphy-downsized-large.gif" width="200"/>
+
 🌱 I’m currently learning Java
 
 📫 How to reach me:
