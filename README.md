@@ -12,12 +12,11 @@ Here are some ideas to get you started:
 🌱 I’m currently learning Java
 
 📫 How to reach me:
+
 [![Linkedin Badge](https://img.shields.io/badge/-@ottodpc-6633cc?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/ottodpc/)](https://www.linkedin.com/in/ottodpc/)
 [![Twitter Badge](https://img.shields.io/badge/-@ottodpc-6633cc?style=flat-square&logo=Twitter&logoColor=white&link=https://twitter.com/ottodpc/)](https://twitter.com/ottodpc/) 
 
-- [<img alt="ottodpc | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />  @ottodpc](https://twitter.com/ottodpc)
-- [<img alt="ottodpc | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" /> OTTO Dieu-Puissant Cyprien](https://www.linkedin.com/in/ottodpc/)
-	
+
 💬 Ask me about hobbies, programming languages and tools
 
 ⚡ Fun fact: My name is Dieu-Puissant which means in English: mighty god. For real. 
