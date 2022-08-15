@@ -3,13 +3,10 @@
 ### >_ Hello World !  👋🏿
 
 Here are some ideas to get you started:
-<!--
-- 🔭 I’m currently working on [@tolhelo](https://github.com/tolhelo)
--->
 
 <img src="https://i.giphy.com/media/S3Pe5NZqgmE8Tl3NI5/giphy-downsized-large.gif" width="200"/>
 
-🌱 I’m currently learning Java
+🌱 I’m currently learning Rust
 
 📫 How to reach me:
 
@@ -25,6 +22,9 @@ Here are some ideas to get you started:
 
 ---
   ### Languages and Tools:
+
+
+  <img align="left" alt="Rust" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/rust/rust.png" />
 
   <img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
   
@@ -51,8 +51,9 @@ Here are some ideas to get you started:
 
 <img  align="left"  alt="Sass"  width="26px"  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png"  />
 
-  <img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
-  <img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
+<img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
+
+<img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
   
 <br  />
 
@@ -60,15 +61,9 @@ Here are some ideas to get you started:
 
 ---
 
-<!--
-<img  align="left" width="auto" alt="Dieu-Puissant Cyprien OTTO's GitHub Top Languages"  src="https://github-readme-stats.vercel.app/api/top-langs/?username=ottodpc&&include_all_commits=true&&count_private=true&&langs_count=10&&layout=compact"  />
--->
-
-<img  align="left" width="auto" alt="Dieu-Puissant Cyprien OTTO's GitHub Top Languages"  src="https://github-readme-stats.vercel.app/api/top-langs/?username=ottodpc&&langs_count=10&&title_color=0c7b93"  />
-
 <img align="right" width="auto" src="https://github-readme-stats.vercel.app/api?username=ottodpc&include_all_commits=true&&custom_title=CyprienOTTO's Github Stats&count_private=true&show_icons=true&title_color=ffffff&icon_color=e3f6f5&text_color=fafafa&bg_color=0c7b93">
 
-
+<img  align="left" width="auto" alt="Dieu-Puissant Cyprien OTTO's GitHub Top Languages"  src="https://github-readme-stats.vercel.app/api/top-langs/?username=ottodpc&&include_all_commits=true&&count_private=true&&langs_count=10&&layout=compact&&title_color=0c7b93""  />
 <!-- thanks to :
 https://github.com/anuraghazra/github-readme-stats
 
