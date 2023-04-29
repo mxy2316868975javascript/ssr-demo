@@ -1,0 +1,9 @@
+{
+  "name": "ottodpc",
+  "version": "1.0.0",
+  "description": "Profile",
+  "main": "index.js",
+  "repository": "git@github.com:ottodpc/ottodpc.git",
+  "author": "cyprienotto@outlook.fr",
+  "license": "MIT"
+}
