@@ -1,4 +1,11 @@
+const filesSrcPrefix = process.env.NODE_ENV === 'development' ? '' : '/ottodpc';
 export const CONSTANTES = {
+  FILES_SRC: {
+    avatar: filesSrcPrefix + '/avatar@2x.png',
+    email: filesSrcPrefix + '/email.svg',
+    phone: filesSrcPrefix + '/phone.svg',
+    address: filesSrcPrefix + '/address.svg',
+  },
   colors: {
     white: '#fff',
     dimgray: {
