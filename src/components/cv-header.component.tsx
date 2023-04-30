@@ -51,19 +51,21 @@ export const CvHeader = () => {
               text: 'cyprienotto@outlook.fr',
               icon: CONSTANTES.FILES_SRC.email,
               type: 'email',
+              link: 'mailto:cyprienotto@outlook.fr',
             },
             {
               text: '06.20.32.03.88',
               icon: CONSTANTES.FILES_SRC.phone,
               type: 'phone',
+              link: 'tel:+33620320388',
             },
             {
-              text: 'ottodpc',
+              text: 'Profil Linkedin',
               link: 'https://www.linkedin.com/in/ottodpc',
               type: 'in',
             },
             {
-              text: 'ottodpc',
+              text: 'Github',
               link: 'https://github.com/ottodpc',
               type: 'gh',
             },
@@ -99,7 +101,15 @@ export const CvHeader = () => {
                       className='text-dimgray-400 text-left md:text-right hover:text-darkblue'>
                       {text}{' '}
                     </Typography.Text>
-                    {type === 'gh' ? (
+                    {icon ? (
+                      <img
+                        width={20}
+                        height={20}
+                        className='ml-2'
+                        alt=''
+                        src={icon}
+                      />
+                    ) : type === 'gh' ? (
                       <GithubOutlined
                         color={CONSTANTES.colors.black}
                         className='ml-2'
