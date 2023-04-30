@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Unna:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply leading-[normal] m-0;
+}
+*,
+::before,
+::after {
+  border-width: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: 'Unna' !important;
+  margin: 0 !important;
+}
+
+span,
+p {
+  font-family: 'Montserrat' !important;
+}
