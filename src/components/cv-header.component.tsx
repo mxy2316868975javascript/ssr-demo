@@ -13,7 +13,7 @@ export const CvHeader = () => {
           height={100}
           className='object-cover md:self-center place-self-center md:place-self-end'
           alt=''
-          src='/avatar@2x.png'
+          src={CONSTANTES.FILES_SRC.avatar}
         />
         <Space
           direction='vertical'
@@ -42,23 +42,29 @@ export const CvHeader = () => {
           direction='vertical'
           className='w-full h-full items-center md:items-end'>
           {[
-            { text: 'Paris, France', icon: '/address.svg', type: 'address' },
+            {
+              text: 'Paris, France',
+              icon: CONSTANTES.FILES_SRC.address,
+              type: 'address',
+            },
             {
               text: 'cyprienotto@outlook.fr',
-              icon: '/email.svg',
+              icon: CONSTANTES.FILES_SRC.email,
               type: 'email',
             },
-            { text: '06.20.32.03.88', icon: '/phone.svg', type: 'phone' },
+            {
+              text: '06.20.32.03.88',
+              icon: CONSTANTES.FILES_SRC.phone,
+              type: 'phone',
+            },
             {
               text: 'ottodpc',
               link: 'https://www.linkedin.com/in/ottodpc',
-              icon: '/phone.svg',
               type: 'in',
             },
             {
               text: 'ottodpc',
               link: 'https://github.com/ottodpc',
-              icon: '/phone.svg',
               type: 'gh',
             },
           ].map((contact, i) => {

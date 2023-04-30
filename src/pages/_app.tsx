@@ -12,6 +12,14 @@ function MyApp({ Component, pageProps }: AppProps) {
           name='viewport'
           content='minimum-scale=1, initial-scale=1, width=device-width'
         />
+        <meta
+          name='description'
+          content='Personal github page of OTTO Cyprien'
+        />
+        <link
+          rel='icon'
+          href='/favicon.ico'
+        />
       </Head>
       <Component {...pageProps} />
     </React.Fragment>
