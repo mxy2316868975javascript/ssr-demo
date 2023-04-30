@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import type { AppProps } from 'next/app';
 import '../styles/global.css';
+import { CONSTANTES } from '../utils';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -18,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <link
           rel='icon'
-          href='/favicon.ico'
+          href={CONSTANTES.FILES_SRC.favicon}
         />
       </Head>
       <Component {...pageProps} />

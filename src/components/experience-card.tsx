@@ -1,5 +1,6 @@
 import { Col, Row, Space, Tag, Typography } from 'antd';
 import { CONSTANTES } from '../utils';
+import { LinkOutlined } from '@ant-design/icons';
 
 export const ExperienceCard = ({
   date,
@@ -27,6 +28,7 @@ export const ExperienceCard = ({
   competences?: string[];
   descriptionText?: string[];
 }) => {
+  console.log('type', type);
   return (
     <div className='grid max-w-[100%] md:max-w-[80%]'>
       <Space direction='vertical'>
@@ -40,32 +42,37 @@ export const ExperienceCard = ({
         </Typography.Text>
         <Row
           align='middle'
-          justify={'space-between'}>
+          justify={'start'}>
           {link ? (
             <a
               href={link}
               className='hover:text-darkblue hover:font-bold'
               target='_blank'>
+              <LinkOutlined className='hover:text-darkblue hover:font-bold' />
               <Typography.Text
                 italic
-                className=' text-black'>
+                className='hover:text-darkblue hover:font-bold text-black mx-2'>
                 {company}
               </Typography.Text>
             </a>
           ) : (
             <Typography.Text
               italic
-              className=' text-black'>
+              className=' text-black mr-2'>
               {company}
             </Typography.Text>
           )}
           {type && (
-            <Tag
-              color={CONSTANTES.colors.gainsboro}
-              bordered={true}
-              className={`rounded-3xl text-dimgray-300 bg-white border-[1px] border-solid  border-gainsboro`}>
-              {type}
-            </Tag>
+            <>
+              {'   '}
+              {'   '}
+              <Tag
+                color={CONSTANTES.colors.gainsboro}
+                bordered={true}
+                className={`rounded-3xl text-dimgray-300 bg-white border-[1px] border-solid  border-gainsboro`}>
+                {type}
+              </Tag>
+            </>
           )}
         </Row>
         <Space

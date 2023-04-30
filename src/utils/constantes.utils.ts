@@ -1,6 +1,7 @@
 const filesSrcPrefix = process.env.NODE_ENV === 'development' ? '' : '/ottodpc';
 export const CONSTANTES = {
   FILES_SRC: {
+    favicon: filesSrcPrefix + '/favicon.ico',
     avatar: filesSrcPrefix + '/avatar@2x.png',
     email: filesSrcPrefix + '/email.svg',
     phone: filesSrcPrefix + '/phone.svg',
@@ -150,6 +151,7 @@ export const CONSTANTES = {
       date: '8 mai 2022 - 27 juin 2023',
       type: 'Alternance',
       company: 'NV GALLERY',
+      link: 'https://www.nvgallery.com/',
       position: 'Software Engineer Full-Stack Symfony / React',
       descriptionText: [
         "Développement de nouvelles fonctionnalités sur l'application",
@@ -157,7 +159,9 @@ export const CONSTANTES = {
         'Diagnostiquer et correction des bugs',
       ],
       competences: [
+        'Docker Compose',
         'Symfony',
+        'Kubernetes',
         'React.js',
         'Twig',
         'TypeScript',
@@ -173,6 +177,7 @@ export const CONSTANTES = {
     {
       date: 'Octobre 2021 - 2 janvier 2023',
       company: 'ALKWELO',
+      link: 'https://alkwelo.app/',
       type: 'Indenpendant',
       position: 'Ingénierie DevOps & Développemenet Full-Stack React / Node.js',
       descriptionText: [
@@ -197,6 +202,7 @@ export const CONSTANTES = {
     },
     {
       date: 'Janvier 2021 - Juin 2022',
+      link: 'https://jeconsommenoir.com/',
       company: 'JeConsommeNoir.com',
       type: 'Bénévolat',
       position: 'Développeur Full-Stack React / PHP - Node.js',
@@ -216,6 +222,7 @@ export const CONSTANTES = {
     },
     {
       date: 'Octobre 2021 - 2 janvier 2023',
+      link: 'https://www.savane-mousson.fr/',
       company: 'Savane & Mousson',
       type: 'Indenpendant',
       position: 'Développeur WordPress',
@@ -224,6 +231,7 @@ export const CONSTANTES = {
     },
     {
       date: 'Octobre 2021 - 2 janvier 2023',
+      link: 'https://www.leptitsniff.paris/',
       company: 'Le P’tit Sniff',
       type: 'Indenpendant',
       position: 'Développeur PrestaShop',

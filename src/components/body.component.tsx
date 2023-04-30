@@ -20,6 +20,9 @@ export const Body = () => {
               return (
                 <ExperienceCard
                   key={i}
+                  link={xp.link}
+                  // @ts-ignore
+                  type={xp.type}
                   date={xp.date}
                   company={xp.company}
                   position={xp.position}

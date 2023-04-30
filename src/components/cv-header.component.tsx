@@ -96,6 +96,7 @@ export const CvHeader = () => {
                     href={link}
                     target='_blank'
                     rel='noopener noreferrer'>
+                    {' '}
                     <Typography.Text
                       italic
                       className='text-dimgray-400 text-left md:text-right hover:text-darkblue'>
