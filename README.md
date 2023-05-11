@@ -6,7 +6,7 @@ Here are some ideas to get you started:
 
 <img src="https://i.giphy.com/media/S3Pe5NZqgmE8Tl3NI5/giphy-downsized-large.gif" width="200"/>
 
-[Wep page CV](ottodpc.github.io/ottodpc/ "Wep page CV")
+[Wep page CV](https://ottodpc.github.io/ottodpc/)
 
 [https://github.com/ottodpc/ottodpc](https://github.com/ottodpc/ottodpc)
 
