@@ -21,17 +21,17 @@ export const CvHeader = () => {
           <Typography.Title
             level={1}
             className='text-black text-left'>
-            OTTO Cyprien
+            {CONSTANTES.name}
           </Typography.Title>
           <Typography.Title
             level={2}
             className='text-darkblue text-left'>
-            Cloud Engineer - DevOps alternant
+            {CONSTANTES.job}
           </Typography.Title>
           <Typography.Text
             italic
             className='text-dimgray-400 text-left'>
-            Rythme: 1 mois en formation - 3 mois en entreprise
+            {CONSTANTES.rythme}
           </Typography.Text>
         </Space>
       </div>

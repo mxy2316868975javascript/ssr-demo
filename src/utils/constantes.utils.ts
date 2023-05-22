@@ -1,5 +1,8 @@
 const filesSrcPrefix = process.env.NODE_ENV === 'development' ? '' : '/ottodpc';
 export const CONSTANTES = {
+  name: 'OTTO Cyprien',
+  job: 'Cloud Engineer - DevOps alternant',
+  rythme: '3 semaines en entreprise / 1 semaine en formation',
   FILES_SRC: {
     favicon: filesSrcPrefix + '/favicon.ico',
     avatar: filesSrcPrefix + '/avatar@2x.png',
@@ -128,6 +131,7 @@ export const CONSTANTES = {
       position: 'Concepteur Développeur d’application, Bac +3',
       descriptionText: [],
       competences: [],
+      rythme: '',
     },
     {
       link: 'https://www.doranco.fr/',
@@ -136,6 +140,7 @@ export const CONSTANTES = {
       position: 'Technicien supérieur système et réseaux, Bac+2',
       descriptionText: [],
       competences: [],
+      rythme: '',
     },
   ],
   EXPERIENCES: [
