@@ -123,14 +123,6 @@ export const CONSTANTES = {
   EDUCATION: [
     {
       link: 'https://cfa-insta.fr/',
-      date: 'Septembre 2023 - Juillet 2025',
-      company: 'CFA INSTA',
-      position: 'Analyste DevOps, Bac +5',
-      descriptionText: [],
-      competences: [],
-    },
-    {
-      link: 'https://cfa-insta.fr/',
       date: 'Septembre 2022 - Juillet 2023',
       company: 'CFA INSTA',
       position: 'Concepteur Développeur d’application, Bac +3',
