@@ -1,5 +1,5 @@
 import { GithubOutlined, LinkedinOutlined } from '@ant-design/icons';
-import { Row, Space, Typography } from 'antd';
+import { QRCode, Row, Space, Typography } from 'antd';
 import Image from 'next/image';
 import { CONSTANTES } from '../utils';
 
@@ -35,7 +35,6 @@ export const CvHeader = () => {
           </Typography.Text>
         </Space>
       </div>
-
       {/* CONTACT */}
       <div className='place-self-center'>
         <Space
@@ -60,12 +59,12 @@ export const CvHeader = () => {
               link: 'tel:+33620320388',
             },
             {
-              text: 'Profil Linkedin',
+              text: 'linkedin.com/in/ottodpc',
               link: 'https://www.linkedin.com/in/ottodpc',
               type: 'in',
             },
             {
-              text: 'Github',
+              text: 'github.com/ottodpc',
               link: 'https://github.com/ottodpc',
               type: 'gh',
             },

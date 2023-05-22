@@ -1,5 +1,6 @@
 const filesSrcPrefix = process.env.NODE_ENV === 'development' ? '' : '/ottodpc';
 export const CONSTANTES = {
+  githubPage: 'https://ottodpc.github.io/ottodpc/',
   name: 'OTTO Cyprien',
   job: 'Cloud Engineer - DevOps alternant',
   rythme: '3 semaines en entreprise / 1 semaine en formation',
