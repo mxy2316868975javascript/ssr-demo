@@ -54,6 +54,7 @@ export const CONSTANTES = {
         'Docker',
         'Symfony',
         'Kubernetes',
+        'Ansible',
         'Git',
         'Rust',
         'React',
