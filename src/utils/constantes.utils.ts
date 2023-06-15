@@ -3,7 +3,7 @@ export const CONSTANTES = {
   githubPage: 'https://ottodpc.github.io/ottodpc/',
   name: 'OTTO Cyprien',
   job: 'Cloud Engineer - DevOps alternant',
-  rythme: '3 semaines en entreprise / 1 semaine en formation',
+  rythme: '',
   FILES_SRC: {
     favicon: filesSrcPrefix + '/favicon.ico',
     avatar: filesSrcPrefix + '/avatar@2x.png',
