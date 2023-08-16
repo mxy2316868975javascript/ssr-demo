@@ -2,7 +2,7 @@ const filesSrcPrefix = process.env.NODE_ENV === 'development' ? '' : '/ottodpc';
 export const CONSTANTES = {
   githubPage: 'https://ottodpc.github.io/ottodpc/',
   name: 'OTTO Cyprien',
-  job: 'Cloud Engineer - DevOps alternant',
+  job: 'Cloud Engineer DevOps & Application Designer Developer',
   rythme: '',
   FILES_SRC: {
     favicon: filesSrcPrefix + '/favicon.ico',
