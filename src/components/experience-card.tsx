@@ -1,6 +1,8 @@
-import { Col, Row, Space, Tag, Typography } from 'antd';
-import { CONSTANTES } from '../utils';
-import { LinkOutlined } from '@ant-design/icons';
+"use client";
+
+import { Row, Space, Tag, Typography } from "antd";
+import { CONSTANTES } from "../utils";
+import LinkOutlined from "@ant-design/icons/LinkOutlined";
 
 export const ExperienceCard = ({
   date,
@@ -16,76 +18,67 @@ export const ExperienceCard = ({
   company: string;
   link?: string;
   type?:
-    | 'Stage'
-    | 'Alternance'
-    | 'CDI'
-    | 'CDD'
-    | 'Freelance'
-    | 'Auto-entrepreneur'
-    | 'Intérim'
-    | 'Indenpendant'
-    | 'Bénévolat';
+    | "Stage"
+    | "Alternance"
+    | "CDI"
+    | "CDD"
+    | "Freelance"
+    | "Auto-entrepreneur"
+    | "Intérim"
+    | "Indenpendant"
+    | "Bénévolat";
   competences?: string[];
   descriptionText?: string[];
 }) => {
-  console.log('type', type);
+  console.log("type", type);
   return (
-    <div className='grid max-w-[100%] md:max-w-[80%]'>
-      <Space direction='vertical'>
-        <Typography.Text
-          italic
-          className='  text-dimgray-100'>
+    <div className="grid max-w-[100%] md:max-w-[80%]">
+      <Space direction="vertical">
+        <Typography.Text italic className=" text-dimgray-100">
           {date}
         </Typography.Text>
-        <Typography.Text className=' font-bold text-darkblue'>
+        <Typography.Text className="font-bold text-darkblue">
           {position}
         </Typography.Text>
-        <Row
-          align='middle'
-          justify={'start'}>
+        <Row align="middle" justify={"start"}>
           {link ? (
             <a
               href={link}
-              className='hover:text-darkblue hover:font-bold'
-              target='_blank'>
-              <LinkOutlined className='hover:text-darkblue hover:font-bold' />
+              className="hover:text-darkblue hover:font-bold"
+              target="_blank"
+            >
+              <LinkOutlined className="hover:text-darkblue hover:font-bold" />
               <Typography.Text
                 italic
-                className='hover:text-darkblue hover:font-bold text-black mx-2'>
+                className="mx-2 text-black hover:text-darkblue hover:font-bold"
+              >
                 {company}
               </Typography.Text>
             </a>
           ) : (
-            <Typography.Text
-              italic
-              className=' text-black mr-2'>
+            <Typography.Text italic className="mr-2 text-black ">
               {company}
             </Typography.Text>
           )}
           {type && (
             <>
-              {'   '}
-              {'   '}
+              {"   "}
+              {"   "}
               <Tag
                 color={CONSTANTES.colors.gainsboro}
                 bordered={true}
-                className={`rounded-3xl text-dimgray-300 bg-white border-[1px] border-solid  border-gainsboro`}>
+                className={`rounded-3xl text-dimgray-300 bg-white border-[1px] border-solid  border-gainsboro`}
+              >
                 {type}
               </Tag>
             </>
           )}
         </Row>
-        <Space
-          direction='vertical'
-          size={0}
-          className='my-1'>
+        <Space direction="vertical" size={0} className="my-1">
           {descriptionText &&
             descriptionText.map((text, i) => {
               return (
-                <Typography.Text
-                  key={i}
-                  italic
-                  className=' text-dimgray-200'>
+                <Typography.Text key={i} italic className=" text-dimgray-200">
                   - {text}
                 </Typography.Text>
               );
@@ -93,16 +86,15 @@ export const ExperienceCard = ({
         </Space>
       </Space>
       {/* items-center justify-center md:justify-start */}
-      <div className='grid grid-cols-3 gap-1 items-center max-w-[100%] place-self-center'>
+      <div className="grid grid-cols-3 gap-1 items-center max-w-[100%] place-self-center">
         {competences &&
           competences.map((text, i) => {
             return (
-              <div
-                className=''
-                key={i}>
+              <div className="" key={i}>
                 <Tag
                   color={CONSTANTES.colors.black}
-                  className={`rounded-3xl text-4xs text-center `}>
+                  className={`rounded-3xl text-4xs text-center `}
+                >
                   {text}
                 </Tag>
               </div>
