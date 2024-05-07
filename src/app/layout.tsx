@@ -1,13 +1,8 @@
-import type { Metadata } from "next";
+import Page from "./page";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "OTTO Cyprien",
-  description: "Personal github page - OTTO Dieu-Puissant Cyprien",
-};
 
 export default function RootLayout({
   children,
@@ -16,7 +11,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Page>{children}</Page>
+      </body>
     </html>
   );
 }

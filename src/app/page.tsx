@@ -41,7 +41,11 @@ const DynamicNavigation = () => {
   );
 };
 
-const Index: NextPage = () => {
+const Index = ({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) => {
   const [collapsed, setCollapsed] = useState(false);
   const {
     token: { colorBgContainer, borderRadiusLG },
@@ -70,13 +74,13 @@ const Index: NextPage = () => {
         <Content
           style={{
             margin: 10,
-            padding: 24,
+            padding: 16,
             minHeight: 280,
             background: colorBgContainer,
             borderRadius: borderRadiusLG,
           }}
         >
-          Content
+          {children}
         </Content>
       </Layout>
     </Layout>
