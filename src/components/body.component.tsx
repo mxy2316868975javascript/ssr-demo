@@ -9,7 +9,6 @@ export const Body = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-2 items-center h-full max-w-full md:w-[60vw] place-items-center py-10 px-2">
       <Col className="h-full ">
         <div>
-          {/*  EXPÉRIENCES */}
           <Typography.Title underline level={3} className="">
             EXPÉRIENCES
           </Typography.Title>
@@ -41,13 +40,13 @@ export const Body = () => {
           </Typography.Title>
           {CONSTANTES.COMPETENCES.map((c, i) => {
             return (
-              <>
+              <div key={i}>
                 <Typography.Text className="">{c.theme}</Typography.Text>
                 <div className="flex flex-row flex-wrap items-center justify-center min-w-full gap-1 md:justify-start">
-                  {c.competences.map((text: string, i: number) => {
+                  {c.competences.map((text: string, index: number) => {
                     return (
                       <Tag
-                        key={i}
+                        key={index}
                         className={`text-4xs text-black bg-white border-[1px] border-solid  border-gainsboro font-bold italic`}
                       >
                         {text}
@@ -55,7 +54,7 @@ export const Body = () => {
                     );
                   })}
                 </div>
-              </>
+              </div>
             );
           })}
         </div>
@@ -71,7 +70,7 @@ export const Body = () => {
                   key={i}
                   link={e.link}
                   date={e.date}
-                  company={e.company}
+                  company={e.company as string}
                   position={e.position}
                   descriptionText={e.descriptionText}
                   competences={e.competences}

@@ -1,7 +1,7 @@
 const filesSrcPrefix = process.env.NODE_ENV === "development" ? "" : "/ottodpc";
 export const CONSTANTES = {
   githubPage: "https://ottodpc.github.io/ottodpc/",
-  name: "OTTO Dieu-Puissant Cyprien",
+  name: "OTTO Dieu-Puissant Cypr1sien21",
   description:
     "5 ans d'expérience en tant que Développeur Full-Stack et Concepteur d'Applications, j'utilise les technologies et outils de la philosophie DevOps depuis 3 ans et je suis déterminé à poursuivre mon évolution dans ce domaine.",
   job: "Cloud Engineer DevOps",
