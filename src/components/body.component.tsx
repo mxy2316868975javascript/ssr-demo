@@ -1,6 +1,7 @@
 "use client";
 
 import { Col, Progress, Space, Tag, Typography } from "antd";
+import Button from "antd/es/button";
 import { ExperienceCard } from "./experience-card";
 import { CONSTANTES } from "../utils";
 
@@ -12,7 +13,7 @@ export const Body = () => {
           <Typography.Title underline level={3} className="">
             EXPÉRIENCES
           </Typography.Title>
-
+          <Button />
           <Space direction="vertical">
             {CONSTANTES.EXPERIENCES.map((xp, i) => {
               return (

@@ -2,7 +2,6 @@ import path from "path";
 import process from "process";
 import bundleAnalyzer from "@next/bundle-analyzer";
 import TerserPlugin from "terser-webpack-plugin";
-
 import withPlugins from "next-compose-plugins";
 
 const withBundleAnalyzer = bundleAnalyzer({
