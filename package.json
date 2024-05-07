@@ -18,13 +18,14 @@
     "email": "cyprienotto@outlook.fr"
   },
   "scripts": {
-    "dev": "NO_HMR=true ANALYZE=true next dev",
-    "build": "next build",
+    "dev": "NO_HMR=true next dev",
+    "build": "ANALYZE=browser next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@ant-design/icons": "^5.3.6",
+    "@antv/x6": "^2.18.1",
     "@next/bundle-analyzer": "^14.2.3",
     "@swc/core": "^1.5.3",
     "antd": "^5.16.5",

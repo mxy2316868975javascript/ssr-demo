@@ -1,38 +1,85 @@
 "use client";
 
 import type { NextPage } from "next";
-import { Body, CvHeader } from "../components";
-import { QRCode, Space, Typography } from "antd";
-import { CONSTANTES } from "../utils";
+import Link from "next/link";
+import React, { useState } from "react";
+import { AppstoreOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
+import { Button, Layout, Menu, theme } from "antd";
+
+const { Header, Sider, Content } = Layout;
+
+const navigationData = [
+  { path: "/", label: "Home", icon: <AppstoreOutlined /> },
+  {
+    path: "/about",
+    label: "About",
+    icon: <AppstoreOutlined />,
+  },
+  {
+    path: "/chart",
+    label: "chart",
+    icon: <AppstoreOutlined />,
+  },
+  { path: "/x6", label: "x6", icon: <AppstoreOutlined /> },
+  { path: "/my", label: "my", icon: <AppstoreOutlined /> },
+  {
+    path: "/contact",
+    label: "Contact",
+    icon: <AppstoreOutlined />,
+  },
+];
+
+const DynamicNavigation = () => {
+  return (
+    <Menu theme="dark" mode="inline">
+      {navigationData.map((item, index) => (
+        <Menu.Item key={index} icon={item.icon}>
+          <Link href={item.path}>{item.label}</Link>
+        </Menu.Item>
+      ))}
+    </Menu>
+  );
+};
 
 const Index: NextPage = () => {
+  const [collapsed, setCollapsed] = useState(false);
+  const {
+    token: { colorBgContainer, borderRadiusLG },
+  } = theme.useToken();
+
   return (
-    <div className="bg-white grid items-center max-w-[95vw] min-w-[90vw] h-full">
-      <Space
-        direction={"vertical"}
-        align="center"
-        size={40}
-        className="w-full h-full bg-white "
-      >
-        <CvHeader />
-        <Space direction="vertical" align="center" size={0}>
-          <Typography.Text
-            italic
-            className="text-left text-dimgray-400 md:text-right"
-          >
-            CV web site:
-          </Typography.Text>
-          <QRCode
+    <Layout className="h-full">
+      <Sider trigger={null} collapsible collapsed={collapsed}>
+        <div className="demo-logo-vertical" />
+
+        <DynamicNavigation />
+      </Sider>
+      <Layout>
+        <Header style={{ padding: 0, background: colorBgContainer }}>
+          <Button
+            type="text"
+            icon={collapsed ? <MenuUnfoldOutlined /> : <AppstoreOutlined />}
+            onClick={() => setCollapsed(!collapsed)}
             style={{
-              margin: 0,
+              fontSize: "16px",
+              width: 64,
+              height: 64,
             }}
-            value={CONSTANTES.githubPage}
-            size={85}
           />
-        </Space>
-        <Body />
-      </Space>
-    </div>
+        </Header>
+        <Content
+          style={{
+            margin: 10,
+            padding: 24,
+            minHeight: 280,
+            background: colorBgContainer,
+            borderRadius: borderRadiusLG,
+          }}
+        >
+          Content
+        </Content>
+      </Layout>
+    </Layout>
   );
 };
 

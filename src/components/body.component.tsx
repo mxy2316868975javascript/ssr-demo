@@ -13,7 +13,7 @@ export const Body = () => {
           <Typography.Title underline level={3} className="">
             EXPÉRIENCES
           </Typography.Title>
-          <Button />
+          <Button type="primary" />
           <Space direction="vertical">
             {CONSTANTES.EXPERIENCES.map((xp, i) => {
               return (
