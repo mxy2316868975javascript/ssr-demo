@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
     "target": "esnext",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true, // 如果你需要元数据反射
     "module": "commonjs",
     "moduleResolution": "node",
     "lib": ["dom", "dom.iterable", "esnext"],

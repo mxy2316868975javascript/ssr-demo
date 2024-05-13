@@ -5,6 +5,7 @@
     "x": 290,
     "y": 110,
     "data": {
+      "id": "1",
       "label": "读数据",
       "status": "success"
     },
@@ -22,6 +23,7 @@
     "y": 225,
     "data": {
       "label": "逻辑回归",
+      "id": "2",
       "status": "success"
     },
     "ports": [
@@ -45,6 +47,7 @@
     "x": 170,
     "y": 350,
     "data": {
+      "id": "3",
       "label": "模型预测",
       "status": "success"
     },
@@ -65,6 +68,7 @@
     "x": 450,
     "y": 350,
     "data": {
+      "id": "4",
       "label": "读取参数",
       "status": "success"
     },
@@ -124,6 +128,7 @@
     "x": 650,
     "y": 170,
     "data": {
+      "id": "8",
       "label": "读取参数",
       "status": "success"
     },
@@ -144,6 +149,7 @@
     "x": 650,
     "y": 220,
     "data": {
+      "id": "9",
       "label": "读取参数",
       "status": "success"
     },
@@ -164,6 +170,7 @@
     "x": 650,
     "y": 270,
     "data": {
+      "id": "10",
       "label": "读取参数",
       "status": "success"
     },
@@ -184,6 +191,7 @@
     "x": 650,
     "y": 320,
     "data": {
+      "id": "11",
       "label": "读取参数",
       "status": "success"
     },
@@ -204,6 +212,7 @@
     "x": 650,
     "y": 370,
     "data": {
+      "id": "12",
       "label": "读取参数",
       "status": "success"
     },
@@ -224,6 +233,7 @@
     "x": 650,
     "y": 420,
     "data": {
+      "id": "13",
       "label": "读取参数",
       "status": "success"
     },
@@ -244,6 +254,7 @@
     "x": 100,
     "y": 520,
     "data": {
+      "id": "14",
       "label": "读取参数",
       "status": "success"
     },
@@ -264,6 +275,7 @@
     "x": 100,
     "y": 220,
     "data": {
+      "id": "19",
       "label": "读取参数1",
       "status": "success"
     },
@@ -284,6 +296,7 @@
     "x": 300,
     "y": 520,
     "data": {
+      "id": "15",
       "label": "读取参数",
       "status": "success"
     },
@@ -304,6 +317,7 @@
     "x": 500,
     "y": 520,
     "data": {
+      "id": "16",
       "label": "读取参数",
       "status": "success"
     },
@@ -324,6 +338,7 @@
     "x": 700,
     "y": 520,
     "data": {
+      "id": "17",
       "label": "读取参数",
       "status": "success"
     },
@@ -345,6 +360,7 @@
     "y": 520,
     "data": {
       "label": "读取参数",
+      "id": "18",
       "status": "success"
     },
     "ports": [
@@ -364,6 +380,7 @@
     "x": 300,
     "y": 70,
     "data": {
+      "id": "19",
       "label": "读取参数",
       "status": "success"
     },
@@ -385,6 +402,7 @@
     "y": 70,
     "data": {
       "label": "读取参数",
+      "id": "20",
       "status": "success"
     },
     "ports": [
@@ -404,6 +422,7 @@
     "x": 700,
     "y": 70,
     "data": {
+      "id": "21",
       "label": "读取参数",
       "status": "success"
     },
@@ -424,6 +443,7 @@
     "x": 900,
     "y": 70,
     "data": {
+      "id": "22",
       "label": "读取参数",
       "status": "success"
     },
@@ -444,6 +464,7 @@
     "x": 300,
     "y": 0,
     "data": {
+      "id": "23",
       "label": "读取参数",
       "status": "success"
     },
@@ -465,6 +486,7 @@
     "y": 70,
     "data": {
       "label": "读取参数",
+      "id": "24",
       "status": "success"
     },
     "ports": [

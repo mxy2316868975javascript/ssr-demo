@@ -1,19 +1,27 @@
 import React, { useEffect, useRef } from "react";
 import { Graph, Path, Cell, Node, Edge } from "@antv/x6";
 // import { Selection } from '@antv/x6-plugin-selection'
+import { History } from "@antv/x6-plugin-history";
+import { Snapline } from "@antv/x6-plugin-snapline";
 import { register } from "@antv/x6-react-shape";
-import "./graph.scss";
-import { image, nodeStatusList } from "../constants/data";
+import { Clipboard } from "@antv/x6-plugin-clipboard";
+import { Selection } from "@antv/x6-plugin-selection";
+import { Keyboard } from "@antv/x6-plugin-keyboard";
+import "./index.scss";
+import { image, nodeStatusList } from "../../constants/data";
+import UIStore from "@/store/UIStore";
 
 const AlgoNode = (props) => {
   const { node } = props;
   const data = node?.getData();
-  const { label, status = "default" } = data;
-
+  const { id, label, status = "default" } = data;
+  console.log("data", data);
   return (
     <div className={`node ${status}`}>
       <img src={image.logo} alt="logo" />
-      <span className="label">{label}</span>
+      <span className="label">
+        {label} - {id}
+      </span>
       <span className="status">
         {status === "success" && <img src={image.success} alt="success" />}
         {status === "failed" && <img src={image.failed} alt="failed" />}
@@ -94,14 +102,15 @@ Graph.registerConnector(
   true
 );
 
-const GraphContainer = () => {
+const GraphContainer = ({ id }: { id: number | string }) => {
+  const uiStore = UIStore;
   const containerRef = useRef(null);
   useEffect(() => {
     if (!containerRef.current) {
       return;
     }
 
-    const graph = new Graph({
+    const graph: Graph = new Graph({
       container: containerRef.current,
       panning: {
         enabled: true,
@@ -170,6 +179,7 @@ const GraphContainer = () => {
       },
     });
 
+    uiStore.graph = graph;
     // graph
     //   .use
     //     new Selection({
@@ -203,6 +213,68 @@ const GraphContainer = () => {
       });
     });
 
+    graph.on("edge:mouseenter", ({ edge }) => {
+      edge.addTools({
+        name: "button-remove",
+        args: { distance: -40 },
+      });
+    });
+
+    graph.on("edge:mouseleave", ({ edge }) => {
+      edge.removeTools();
+    });
+
+    graph.bindKey("ctrl+c", () => {
+      const cells = graph.getSelectedCells();
+      console.log(cells);
+      if (cells.length) {
+        graph.copy(cells);
+      }
+      return false;
+    });
+
+    graph.bindKey("ctrl+v", () => {
+      if (!graph.isClipboardEmpty()) {
+        const cells = graph.paste({ offset: 32 });
+        graph.cleanSelection();
+        graph.select(cells);
+      }
+      return false;
+    });
+
+    graph.use(
+      new History({
+        enabled: true,
+      })
+    );
+
+    graph.use(
+      new Snapline({
+        enabled: true,
+        sharp: true,
+      })
+    );
+
+    graph.use(
+      new Clipboard({
+        enabled: true,
+      })
+    );
+
+    graph.use(
+      new Selection({
+        enabled: true,
+        showNodeSelectionBox: true,
+      })
+    );
+
+    graph.use(
+      new Keyboard({
+        enabled: true,
+        global: true,
+      })
+    );
+
     // 初始化节点/边
     const init = (data: Cell.Metadata[]) => {
       const cells: Cell[] = [];
@@ -217,7 +289,12 @@ const GraphContainer = () => {
     };
 
     // 显示节点状态
-    const showNodeStatus = async (statusList) => {
+    const showNodeStatus = async (
+      statusList: {
+        id: string;
+        status: string;
+      }[][]
+    ) => {
       const status = statusList.shift();
       status?.forEach((item) => {
         const { id, status } = item;
@@ -246,9 +323,13 @@ const GraphContainer = () => {
       graph.dispose();
     };
   }, []);
-
+  console.log(`render-${id}`);
   return (
-    <div ref={containerRef} style={{ width: "100%", height: "100%" }}></div>
+    <div
+      key={id}
+      ref={containerRef}
+      style={{ width: "100%", height: "100%" }}
+    ></div>
   );
 };
 

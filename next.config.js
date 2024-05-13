@@ -34,7 +34,6 @@ const nextConfig = {
     config,
     { buildId, dev, isServer, defaultLoaders, nextRuntime, webpack }
   ) => {
-    console.log(1);
     config.optimization = {
       minimize: true,
       minimizer: [
