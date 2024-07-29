@@ -30,6 +30,7 @@ const nextConfig = {
       },
     ];
   },
+  distDir: "out",
   webpack: (
     config,
     { buildId, dev, isServer, defaultLoaders, nextRuntime, webpack }
@@ -115,7 +116,9 @@ const nextConfig = {
           },
         },
       },
+      // output: "export",
     };
+    // config. = "outputexport";
 
     return config;
   },

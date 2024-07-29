@@ -5,7 +5,11 @@
     "emitDecoratorMetadata": true, // 如果你需要元数据反射
     "module": "commonjs",
     "moduleResolution": "node",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -22,7 +26,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": [
+        "./src/*"
+      ]
     },
     "strictNullChecks": true,
     "resolveJsonModule": true
@@ -34,7 +40,10 @@
     ".next/types/**/*.ts",
     "next.config.js",
     "postcss.config.js",
-    "tailwind.config.ts"
+    "tailwind.config.ts",
+    "out/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }

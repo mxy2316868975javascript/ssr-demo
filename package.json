@@ -21,6 +21,7 @@
   "scripts": {
     "dev": "NO_HMR=true next dev",
     "build": "ANALYZE=browser next build",
+    "build2": "ANALYZE=browser next export",
     "start": "next start",
     "lint": "next lint"
   },
