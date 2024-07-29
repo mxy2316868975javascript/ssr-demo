@@ -18,6 +18,9 @@
     "name": "OTTO Dieu-Puissant Cyprien",
     "email": "cyprienotto@outlook.fr"
   },
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "scripts": {
     "dev": "NO_HMR=true next dev",
     "build": "ANALYZE=browser next build",
