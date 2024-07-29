@@ -11,7 +11,7 @@ import "./index.scss";
 import { image, nodeStatusList } from "../../constants/data";
 import UIStore from "@/store/UIStore";
 
-const AlgoNode = (props) => {
+const AlgoNode = (props: any) => {
   const { node } = props;
   const data = node?.getData();
   const { id, label, status = "default" } = data;
