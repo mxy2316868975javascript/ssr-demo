@@ -30,6 +30,7 @@ const nextConfig = {
       },
     ];
   },
+  output: "export",
   webpack: (
     config,
     { buildId, dev, isServer, defaultLoaders, nextRuntime, webpack }
