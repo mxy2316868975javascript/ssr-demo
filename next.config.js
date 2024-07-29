@@ -30,7 +30,6 @@ const nextConfig = {
       },
     ];
   },
-  distDir: "out",
   webpack: (
     config,
     { buildId, dev, isServer, defaultLoaders, nextRuntime, webpack }
